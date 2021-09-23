@@ -1,11 +1,15 @@
-#include <stdio.h>
-main()
+#include<stdio.h>
+int main()
 {
-    int a[5], i;
-    printf("Enter the elements:");
-    for(i=0;i<5;i++)
-        scanf("%d", &a[i]);
-    printf("\nThe elements of the array are:\n");
-    for(i=0;i<5;i++)
-        printf("%d",a[i]);
+    int i, n, a[10];
+    for(i =0; i<10;i++)
+    {
+        printf("Enter the element a[%d]\n", i);
+        scanf("%d",&a[i]);
+    }
+    for(i=0; i<10;i++)
+    {
+        n += a[i];
+    }
+    printf("Sum of elements of the array is: %d\n",n );
 }
